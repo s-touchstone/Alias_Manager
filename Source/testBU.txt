@@ -1,7 +1,7 @@
 alais yellow='echo "try red instead"'
 alais ads='asdsadasdasdsa'
 alais willis='echo "What you talkin bout willis"'
-#Custom aliases
+#Custom Aliases
 alias one='echo "I should be the only one"'
 alais good='echo "all good vibes here"'
 alais another='echo "Another on bites the dust"'

@@ -6,19 +6,19 @@
 using namespace std;
 
 void add_alias(){
-	char name[10];
+	char name[10],command[100];
+	string first="alais ",second="=\'",third="\'"new_line;
+
+	//Prompt for input and then create command syntax to add to file
+
 	cout<<"Enter alias's call name"<<endl;
 	cin.getline(name,sizeof(name));
-	cout<<"Enter the command (in parentheses)"<<endl;
-	char command[100];
+	cout<<"Enter the command as you would in bash"<<endl;
 	cin.getline(command,sizeof(command));
-	string first="alais ";
-	string second="=\'";
-	string third="\'";
-	string new_line=first+name+second+command+third;
+	new_line=first+name+second+command+third;
 	fstream file;
 	file.open("test.txt",ios::app);
 //	file.open("~/.bashrc",ios::app);
 	file<<new_line<<endl;
-	cout<<new_line<<endl<<endl;
-}//end add_alias
+	cout<<"New: "<<new_line<<endl<<endl;
+}

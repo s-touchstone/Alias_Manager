@@ -7,11 +7,17 @@
 #include "del_alias.cpp"
 #include "lis_alias.h"
 #include "lis_alias.cpp"
+#include "init_alias.h"
+#include "init_alias.cpp"
 
 using namespace std;
 
 int main(){
+	init_alias();
 	int menu_sel=5;
+
+	//Main menu propt on what to do
+
 	while(menu_sel!=0){
 		cout<<"1. Add a new alias"<<endl;
 		cout<<"2. Modify an exising alias"<<endl;
@@ -19,7 +25,7 @@ int main(){
 		cout<<"4. List current aliases"<<endl;
 		cout<<"0. EXIT"<<endl<<"#";
 		cin>>menu_sel;
-		cin.ignore();//prep for getline
+		cin.ignore();//prep for getline in other functions
 		cout<<endl;
 		switch(menu_sel){
 			case 0:
@@ -40,7 +46,7 @@ int main(){
 				cout<<"Incorrect selection.";
 			       	cout<<" Please try again!"<<endl;
 				break;
-		}//end switch
-	}//end while
+		}
+	}
 	return 0;
-}//end main
+}
