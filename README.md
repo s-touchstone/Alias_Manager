@@ -7,3 +7,5 @@ overwriting its original information. It appends an area to the end of the file
 in which the aliases will be stored. The custom aliases can be modified at any
 time if a mistake is made in syntax or if you want to change the alias's name.
 It is a very simple tool to use.
+
+NOTE: This program is not complete yet as of 02012019
